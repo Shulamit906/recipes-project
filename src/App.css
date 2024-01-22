@@ -7,6 +7,8 @@
   pointer-events: none;
 }
 
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,14 +16,16 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  direction: rtl;
+  background-color: black;
+  min-height: 15vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
+  /* border-bottom: 8px solid #ed2290; */
 }
 
 .App-link {
@@ -32,7 +36,194 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.background-img {
+  background-size: 100%;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  background-image: url('../images/home.jpg');
+}
+
+.backgroundPage {
+  background-image: url('../images/login.jpg');
+}
+
+.App-header a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.App-header a:focus {
+  color: #c62026;
+  /* Change color on hover as needed */
+}
+
+.cards {
+  border: 2px solid black;
+  height: 340px;
+  width: 300px;
+  margin: 20px;
+}
+
+.cardDetailes {
+  border: 2px solid black;
+  margin: 20px;
+  padding: auto;
+  width: 500px;
+}
+
+.recipes {
+  direction: rtl;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.myRecipes{
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.recipe {
+  display: flex;
+
+  /* align-items: center; */
+  justify-content: center;
+  flex-wrap: wrap;
+  /* padding: 100px; */
+  width: 100%;
+}
+
+.btn {
+  position: fixed;
+  bottom: 20px;
+  right: 75%;
+}
+
+.my-button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #c62026;
+  border: none;
+  cursor: pointer;
+  border-radius: 10%;
+  /* border: 1px solid #ed2290;   */
+}
+
+.my-button:hover {
+  background-color: #c62026;
+  color: #fff;
+  border: 1px solid #c62026;
+}
+
+.filter {
+  direction: rtl;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+.myImg {
+  border-bottom: 5px solid #c62026;
+}
+
+.soppingList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: -150px;
+}
+
+.l {
+  padding: 5px 30px;
+}
+
+.categories {
+  direction: rtl;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.ll {
+  margin-top: 40px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+
+}
+
+.header {
+  direction: rtl;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  border-bottom: 8px solid #c62026;
+
+}
+
+.login2 {
+  border-bottom: 8px solid #c62026;
+}
+
+.my-img {
+  background-image: url('../images/logo.png');
+  border-radius: 50%;
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  height: 75px;
+  width: 75px;
+  margin-left: 20px;
+}
+
+.detailes {
+  height: 100%;
+}
+
+.addRecipe {
+  height: 100%;
+}
+
+.text {
+  font-weight: bold;
+  margin-top: -30px;
 }
